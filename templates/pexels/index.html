@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}"/>
+    <title>photos</title>
+  </head>
+  <body>
+
+      <div class="row">
+        {% for photo in photos %}
+
+                <div class="thumbnail">
+                    <a href="{{photo.original}}"><img src="{{photo.medium}}" height="300" alt="lorem"></a>
+                </div>
+        {% endfor %}
+      </div>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+body {
+	padding-top: 70px;
+	background: url('https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/v384-ning-07b-gradientbg_2.jpg?bg=transparent&con=3&cs=srgb&dpr=1&fm=jpg&ixlib=php-3.1.0&q=65&usm=15&vib=3&w=1200&s=0fff2f9f449dbefb5be406e4eebc5e9f') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+
+}
+
+.thumbnail {
+    margin: 10px;
+    float:left;
+}
+
+.thumbnail img {
+	display: block;
+	transition: all .2 ease-in-out;
+}
+
+.thumbnail img:hover {
+	opacity: 1;
+	transform: scale(1) rotate(2deg);
+	box-shadow: 0 0 7px rgba(0,0,0, .5);
+}
+
+/*when hovered over, all other images should shrink. up above set opacity and scale as well*/
+
+.thumbnail:hover img {
+	opacity: 6;
+	transform: scale(.92);
+}
